@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+  color: black;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.main-heading {
+  font-weight: 700;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.sub-heading {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.content-block {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  max-height: 500px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.tilt-right {
+  transform: rotate(1.5deg);
+}
+
+.tilt-left {
+  transform: rotate(-1.5deg);
+}
+
+.quote {
+  font-style: italic;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 12px;
+  font-family: 'Patrick Hand', cursive;
+}
+
+.paragraph {
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 0 10px;
+}
+
+.handwritten {
+  font-family: 'Patrick Hand', cursive;
+  font-weight: 600;
+  color: black;
+}
+
+.music-block {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.music-block button {
+  padding: 8px 16px;
+  margin: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#confetti-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+}

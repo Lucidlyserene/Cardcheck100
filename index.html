@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HBD TO THE CUTEST CHAOS 💥🎉</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="main-heading">HBD TO THE CUTEST CHAOS 💥🎉</h1>
+    <h2 class="sub-heading">Not the galaxy you deserve, but a quiet little light to make you smile ✨</h2>
+
+    <!-- Block 1 -->
+    <div class="content-block">
+      <div class="image tilt-left">
+        <img src="images/img1.jpeg" alt="Birthday Image 1">
+      </div>
+      <p class="quote">You’re one of a kind</p>
+      <p class="paragraph handwritten">yayayy happiest birthday anyaaa! the girl who reminds of orange bar icecreams in summer evenings ♡ - from the girl who originally named you bakri 🤍</p>
+    </div>
+
+    <!-- Block 2 -->
+    <div class="content-block">
+      <div class="image tilt-right">
+        <img src="images/img2.jpeg" alt="Birthday Image 2">
+      </div>
+      <p class="quote">Don’t stay chaotic forever. (Please do.)</p>
+      <p class="paragraph handwritten">
+        Dear, Ananya, you're a shinchan that I'd be a kazama/Shiro/masao/nani/himawari/tamiko for. I'll gladly take on any role depending on the situation for you. You're so funny, so bubbly, your positive energy mesmerizes me. You're someone who knows exactly what to say as a comeback/keep the conversation going/advise someone etc. and u manage to keep your every sentence entertaining, makes me wanna reply to each and every word that you've said but if I do that, the convo will be never-ending. Overall, you're the light that brightens up my day, I hope you can find someone who can lighten up yours too. Happy birthday love Best wishes, ~Tuli
+      </p>
+
+      <div class="music-block">
+        <button onclick="showMusicOptions()">PLAY MY SONG</button>
+        <div id="music-options" style="display: none;">
+          <button onclick="showSong(1)">Option 1</button>
+          <button onclick="showSong(2)">Option 2</button>
+          <button onclick="showSong(3)">Option 3</button>
+          <button onclick="showSong(4)">Option 4</button>
+          <button onclick="showSong(5)">Option 5</button>
+        </div>
+        <div id="song-container"></div>
+      </div>
+    </div>
+
+    <!-- Block 3 -->
+    <div class="content-block">
+      <div class="image tilt-left">
+        <img src="images/img3.jpeg" alt="Birthday Image 3">
+      </div>
+      <p class="quote">Cheers to you and all you do!</p>
+      <p class="paragraph handwritten">
+        Firstly happy birthday ANNNNUUU! (Just so you know, this is me saying that in an extremely squeaky shrill voice, the one like y/n) But honestly I suck at convos literally... Like I met you for just a few weeks at most and god forbid how'd you end up being such a great friend for me. Ion know how to say but all those random jokes, midnight texts in the gc's, laughing at complete incoherent bullshits, it was fun, thnx for giving me such beautiful memories, thnx for being the friend who's like the human incarnation of a sun sized Pokemon full of fire ball. Don't let that fire and warmth in you dim, no matter how old you're, and waise bhi age is just a number so fuck that.
+        <br><br>
+        And don't demean yourself and be sorry for things that actually hurt you, no matter how many people are against you, don't back off. Remember as much as them, you're precious too, and incase of uncertainty, look in the mirror and look into ur eyes, bet you could never find eyes that went through shit and yet hold the universe of dreams and so much brightness... So don't let anyone look down on my wild and feral lil Annu. I love you my lil bbg, and would love you till oceans dry, I'll love you till I stop making dick jokes (practically impossible). Let's make more wild jokes in the years to come by and I hope ur dihh grows by 2 more Inches... Praying for ur bestttt, and I wish u a life fulllll of happiness and everything you've ever wished for. ~Ann
+      </p>
+    </div>
+
+    <!-- Block 4 -->
+    <div class="content-block">
+      <div class="image tilt-right">
+        <img src="images/img4.jpeg" alt="Birthday Image 4">
+      </div>
+      <p class="quote">Don’t worry, you’re not that old yet. (Almost.)</p>
+      <p class="paragraph handwritten">
+        Happy Birthday Ananya!! I hope you enjoy your day!😣💗 I love youu, you give suchh an amazing vibe in the gc and out of all the people there; you're one of those who totally get my humorr🥺 May you get all the things you wish in this lifetime. Godbless! Lovelots!🥳🎉 ~ Vermischè
+      </p>
+    </div>
+
+    <!-- Block 5 -->
+    <div class="content-block">
+      <div class="image tilt-left">
+        <img src="images/img5.jpeg" alt="Birthday Image 5">
+      </div>
+      <p class="quote">Sending good vibes your way today!</p>
+      <p class="paragraph handwritten">
+        Happy Birthday to one of the brightest souls I know.
+        You're not just cute and funny, you’re the kind of person who can light up an entire room with your laugh. Your support means more than words can ever say, and your sense of humour? Unmatched. You make the hard days easier and the good days even better.
+        Wishing you eternal happiness, unshakable peace, and the kind of success that makes your heart feel full. May this year be softer, kinder, and filled with everything your soul craves. You deserve the absolute best always.
+        Happy Birthday Ananya ji
+        ~ Ravanya
+      </p>
+    </div>
+  </div>
+
+  <canvas id="confetti-canvas"></canvas>
+
+  <script>
+    function showMusicOptions() {
+      document.getElementById('music-options').style.display = 'block';
+    }
+
+    function showSong(option) {
+      const embeds = [
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4GKvdDvccPNftCIJITqaHR?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>,
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2J3lhANOlozP1MOSAP6qbN?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>,
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3h5YZTfJ4BBpvLVHS6lGUl?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>,
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6bngLYnL3AbtpXd7uPAMMd?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>,
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6Frhkb7giXWjeJAX2dJT88?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      ];
+      document.getElementById('song-container').innerHTML = embeds[option - 1];
+    }
+  </script>
+</body>
+</html>
